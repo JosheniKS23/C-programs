@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int i = 1, n;
+    int n, i = 1;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
+    printf("Divisors of %d are: ", n);
     while (i <= n) {
-        if (i % 2 != 0) {
+        if (n % i == 0) {
             printf("%d ", i);
         }
         i++;
